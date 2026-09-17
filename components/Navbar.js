@@ -9,6 +9,7 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import DownloadIcon from '@mui/icons-material/Download';
+import VisibilityIcon from '@mui/icons-material/Visibility';
 import { useTranslations, useLocale } from 'next-intl';
 import { useRouter, usePathname } from 'next/navigation';
 import { routing } from '@/i18n/routing';
@@ -176,6 +177,30 @@ export default function Navbar() {
                 >
                   {t('downloadCV')}
                 </Button>
+
+                <Button
+                  variant="outlined"
+                  size="small"
+                  startIcon={<VisibilityIcon />}
+                  href="https://flowcv.com/resume/sijustq2u2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  sx={{
+                    ml: 1,
+                    fontSize: '0.82rem',
+                    px: 2,
+                    borderWidth: 2,
+                    borderColor: scrolled ? 'primary.main' : 'rgba(255,255,255,0.6)',
+                    color: scrolled ? 'primary.main' : 'white',
+                    '&:hover': {
+                      borderWidth: 2,
+                      borderColor: scrolled ? 'primary.dark' : 'white',
+                      bgcolor: scrolled ? 'rgba(27,58,107,0.08)' : 'rgba(255,255,255,0.15)',
+                    },
+                  }}
+                >
+                  {t('viewCV')}
+                </Button>
               </Box>
 
               {/* ── Mobile: langue + hamburger ── */}
@@ -311,8 +336,8 @@ export default function Navbar() {
 
         <Divider />
 
-        {/* Télécharger CV */}
-        <Box sx={{ px: 3, py: 2 }}>
+        {/* Télécharger CV + Voir CV */}
+        <Box sx={{ px: 3, py: 2, display: 'flex', flexDirection: 'column', gap: 1.5 }}>
           <Button
             variant="contained"
             color="secondary"
@@ -324,6 +349,19 @@ export default function Navbar() {
             sx={{ py: 1.2 }}
           >
             {t('downloadCV')}
+          </Button>
+          <Button
+            variant="outlined"
+            color="primary"
+            fullWidth
+            startIcon={<VisibilityIcon />}
+            href="https://flowcv.com/resume/sijustq2u2"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setDrawerOpen(false)}
+            sx={{ py: 1.2, borderWidth: 2, '&:hover': { borderWidth: 2 } }}
+          >
+            {t('viewCV')}
           </Button>
         </Box>
       </Drawer>

@@ -11,6 +11,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import SportsIcon from '@mui/icons-material/Sports';
 import HikingIcon from '@mui/icons-material/Hiking';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
+import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import { useTranslations } from 'next-intl';
 
 const SKILLS = {
@@ -355,6 +356,73 @@ export default function AboutSection() {
             </Stack>
           </Grid>
         </Grid>
+
+        <Divider sx={{ my: 6 }} />
+
+        {/* References */}
+        <Box>
+          <Typography variant="h3" sx={{ color: 'text.primary', mb: 4, textAlign: 'center' }}>
+            {t('references')}
+          </Typography>
+          <Grid container spacing={3} sx={{ justifyContent: 'center' }}>
+            {[
+              { nameKey: 'ref1Name', roleKey: 'ref1Role', companyKey: 'ref1Company' },
+              { nameKey: 'ref2Name', roleKey: 'ref2Role', companyKey: 'ref2Company' },
+              { nameKey: 'ref3Name', roleKey: 'ref3Role', companyKey: 'ref3Company' },
+            ].map(({ nameKey, roleKey, companyKey }) => (
+              <Grid size={{ xs: 12, sm: 6, md: 4 }} key={nameKey}>
+                <Paper
+                  elevation={0}
+                  sx={{
+                    p: 3,
+                    border: '1px solid',
+                    borderColor: 'grey.200',
+                    borderRadius: 3,
+                    position: 'relative',
+                    overflow: 'hidden',
+                    transition: 'all 0.2s',
+                    '&:hover': {
+                      borderColor: 'primary.light',
+                      transform: 'translateY(-3px)',
+                      boxShadow: '0 8px 24px rgba(0,0,0,0.07)',
+                    },
+                    '&::before': {
+                      content: '""',
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      right: 0,
+                      height: 3,
+                      bgcolor: 'primary.main',
+                      borderRadius: '3px 3px 0 0',
+                    },
+                  }}
+                >
+                  <FormatQuoteIcon
+                    sx={{
+                      fontSize: 32,
+                      color: 'primary.main',
+                      opacity: 0.15,
+                      position: 'absolute',
+                      top: 12,
+                      right: 12,
+                    }}
+                  />
+                  <Typography variant="h5" sx={{ fontWeight: 700, color: 'text.primary', mb: 0.5, pr: 4 }}>
+                    {t(nameKey)}
+                  </Typography>
+                  <Typography variant="body2" sx={{ color: 'secondary.main', fontWeight: 600, mb: 0.3, fontSize: '0.85rem' }}>
+                    {t(roleKey)}
+                  </Typography>
+                  <Typography variant="body2" sx={{ color: 'text.secondary', fontSize: '0.82rem' }}>
+                    {t(companyKey)}
+                  </Typography>
+                </Paper>
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
+
       </Container>
     </Box>
   );

@@ -2,9 +2,11 @@
   "nav": {
     "home": "Home",
     "about": "About",
+    "projects": "Projects",
     "services": "Services",
     "contact": "Contact",
-    "downloadCV": "Download CV"
+    "downloadCV": "Download CV",
+    "viewCV": "View CV"
   },
   "hero": {
     "greeting": "Hello, I'm",
@@ -13,6 +15,7 @@
     "subtitle": "I design and build modern web applications with Next.js, microservices architectures with Kafka & Spring Boot, and robust information systems.",
     "cta": "Contact me",
     "ctaCV": "Download my CV",
+    "viewCV": "View my CV",
     "location": "Bujumbura, Burundi"
   },
   "about": {
@@ -23,6 +26,7 @@
     "skills": "Technical Skills",
     "languages": "Languages",
     "interests": "Interests",
+    "references": "References",
     "edu1Title": "Master's in Computer Science (ongoing)",
     "edu1School": "Université des Grands Lacs",
     "edu1Period": "Since April 2024",
@@ -34,7 +38,7 @@
     "exp1Title": "Analyst Programmer",
     "exp1Company": "Asyst Resources",
     "exp1Period": "2022 – Present",
-    "exp1Desc": "Development and maintenance of business applications, microservices architecture design, ERP system integration, Java/Spring Boot backend and Next.js frontend development.",
+    "exp1Desc": "Development and maintenance of business applications, microservices architecture design, ERP system integration (orders, inventory, payroll, accounting), Java/Spring Boot backend and Next.js frontend development.",
     "exp2Title": "Intern – Developer",
     "exp2Company": "Asyst Resources",
     "exp2Period": "June 2021 – June 2022",
@@ -43,7 +47,7 @@
     "skillsBackend": "Backend / Java",
     "skillsArchi": "Architecture & Microservices",
     "skillsDB": "Databases",
-    "skillsTools": "Tools",
+    "skillsTools": "Tools & Dev Environment",
     "skillsOffice": "Office Suite",
     "lang1": "Kirundi",
     "lang1Level": "Native",
@@ -55,19 +59,32 @@
     "lang4Level": "Intermediate",
     "interest1": "Sports",
     "interest2": "Hiking",
-    "interest3": "Music"
+    "interest3": "Music",
+    "ref1Name": "KARIKURUBU Faustin",
+    "ref1Role": "Software Engineer",
+    "ref1Company": "Akazi Consulting",
+    "ref2Name": "RURAGIRA Espoir",
+    "ref2Role": "Software Engineer",
+    "ref2Company": "Asyst Resources",
+    "ref3Name": "DUSENGE Emelyne Douce",
+    "ref3Role": "Software Engineer",
+    "ref3Company": "Mediabox"
   },
   "services": {
     "title": "My Services",
-    "subtitle": "Tailored solutions for your digital projects",
+    "subtitle": "Tailored solutions based on real delivered projects",
     "s1Title": "Web & Mobile Development",
-    "s1Desc": "Design and development of high-performance web applications (Next.js, React), intuitive interfaces, community savings and credit management systems, mobile-first responsive applications.",
-    "s2Title": "Business System Design",
-    "s2Desc": "Analysis, modeling (UML, MERISE) and development of complex business systems: insurance contract management, validation workflows, management dashboards.",
-    "s3Title": "ERP Architecture & Integration",
-    "s3Desc": "Implementation and integration of ERP modules: order management, inventory, payroll and accounting. Designing scalable architectures and maintaining data consistency.",
-    "s4Title": "APIs & Microservices",
-    "s4Desc": "Development of robust REST APIs with Spring Boot, microservices architecture with Apache Kafka, inter-service communication via Feign and Rest Template.",
+    "s1Desc": "Web & mobile application for managing a community savings and credit group. Intuitive interfaces, complex business logic, mobile-first responsive design with Next.js and React.",
+    "s1Period": "06/2022 – 06/2023",
+    "s2Title": "Insurance Management System",
+    "s2Desc": "Design of a computer system to simplify and automate insurance contract operations: subscription, monitoring, cancellation and reporting.",
+    "s2Period": "2022 – 2023",
+    "s3Title": "ERP & System Integration",
+    "s3Desc": "Development of an ERP integrating order management, inventory, payroll and accounting, e-commerce and sales management — single database, full visibility.",
+    "s3Period": "In production",
+    "s4Title": "ITAS — Registration Management",
+    "s4Desc": "Management system for vehicle registration and transfer declarations. Automation of administrative processes and dossier traceability.",
+    "s4Period": "Delivered",
     "learnMore": "Learn more"
   },
   "contact": {

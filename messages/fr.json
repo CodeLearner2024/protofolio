@@ -2,9 +2,11 @@
   "nav": {
     "home": "Accueil",
     "about": "À propos",
+    "projects": "Projets",
     "services": "Services",
     "contact": "Contact",
-    "downloadCV": "Télécharger CV"
+    "downloadCV": "Télécharger CV",
+    "viewCV": "Voir le CV"
   },
   "hero": {
     "greeting": "Bonjour, je suis",
@@ -13,6 +15,7 @@
     "subtitle": "Je conçois et développe des applications web modernes avec Next.js, des architectures microservices avec Kafka & Spring Boot, et des systèmes d'information robustes.",
     "cta": "Me contacter",
     "ctaCV": "Télécharger mon CV",
+    "viewCV": "Voir mon CV",
     "location": "Bujumbura, Burundi"
   },
   "about": {
@@ -23,6 +26,7 @@
     "skills": "Compétences techniques",
     "languages": "Langues",
     "interests": "Centres d'intérêt",
+    "references": "Références",
     "edu1Title": "Master en Informatique (en cours)",
     "edu1School": "Université des Grands Lacs",
     "edu1Period": "Depuis avril 2024",
@@ -34,7 +38,7 @@
     "exp1Title": "Analyste Programmeur",
     "exp1Company": "Asyst Resources",
     "exp1Period": "2022 – Présent",
-    "exp1Desc": "Développement et maintenance d'applications métier, conception d'architectures microservices, intégration de systèmes ERP, développement backend Java/Spring Boot et frontend Next.js.",
+    "exp1Desc": "Développement et maintenance d'applications métier, conception d'architectures microservices, intégration de systèmes ERP (commandes, stocks, paie, comptabilité), développement backend Java/Spring Boot et frontend Next.js.",
     "exp2Title": "Stagiaire – Développeur",
     "exp2Company": "Asyst Resources",
     "exp2Period": "Juin 2021 – Juin 2022",
@@ -43,7 +47,7 @@
     "skillsBackend": "Backend / Java",
     "skillsArchi": "Architecture & Microservices",
     "skillsDB": "Bases de données",
-    "skillsTools": "Outils",
+    "skillsTools": "Outils & Environnement",
     "skillsOffice": "Bureautique",
     "lang1": "Kirundi",
     "lang1Level": "Langue maternelle",
@@ -55,19 +59,32 @@
     "lang4Level": "Intermédiaire",
     "interest1": "Sport",
     "interest2": "Randonnée",
-    "interest3": "Musique"
+    "interest3": "Musique",
+    "ref1Name": "KARIKURUBU Faustin",
+    "ref1Role": "Software Engineer",
+    "ref1Company": "Akazi Consulting",
+    "ref2Name": "RURAGIRA Espoir",
+    "ref2Role": "Software Engineer",
+    "ref2Company": "Asyst Resources",
+    "ref3Name": "DUSENGE Emelyne Douce",
+    "ref3Role": "Software Engineer",
+    "ref3Company": "Mediabox"
   },
   "services": {
     "title": "Mes Services",
-    "subtitle": "Des solutions sur mesure pour vos projets numériques",
+    "subtitle": "Des solutions sur mesure basées sur des projets réels livrés",
     "s1Title": "Développement Web & Mobile",
-    "s1Desc": "Conception et développement d'applications web performantes (Next.js, React), interfaces intuitives, systèmes de gestion d'épargne et crédit communautaire, applications responsive mobile-first.",
-    "s2Title": "Conception de Systèmes Métier",
-    "s2Desc": "Analyse, modélisation (UML, MERISE) et développement de systèmes métier complexes : gestion de contrats d'assurance, workflows de validation, tableaux de bord de pilotage.",
-    "s3Title": "Architecture ERP & Intégration",
-    "s3Desc": "Mise en place et intégration de modules ERP : gestion des commandes, des stocks, paie et comptabilité. Conception d'architectures évolutives et maintien de la cohérence des données.",
-    "s4Title": "APIs & Microservices",
-    "s4Desc": "Développement d'APIs REST robustes avec Spring Boot, architecture microservices avec Apache Kafka, communication inter-services via Feign et Rest Template.",
+    "s1Desc": "Application web & mobile pour la gestion d'un groupement communautaire d'épargne et de crédit. Interfaces intuitives, logique métier complexe, responsive mobile-first avec Next.js et React.",
+    "s1Period": "06/2022 – 06/2023",
+    "s2Title": "Système de Gestion d'Assurance",
+    "s2Desc": "Conception d'un système informatique pour simplifier et automatiser les opérations liées aux contrats d'assurance : souscription, suivi, résiliation et reporting.",
+    "s2Period": "2022 – 2023",
+    "s3Title": "ERP & Intégration de Systèmes",
+    "s3Desc": "Développement d'un ERP intégrant la gestion des commandes, des stocks, de la paie et de la comptabilité, du e-commerce et de la gestion commerciale — base de données unique, visibilité totale.",
+    "s3Period": "En production",
+    "s4Title": "ITAS — Gestion des Immatriculations",
+    "s4Desc": "Système de gestion des immatriculations et des déclarations de mutations pour les engins. Automatisation des processus administratifs et traçabilité des dossiers.",
+    "s4Period": "Projet livré",
     "learnMore": "En savoir plus"
   },
   "contact": {

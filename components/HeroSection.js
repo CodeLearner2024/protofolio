@@ -5,6 +5,7 @@ import {
 } from '@mui/material';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import DownloadIcon from '@mui/icons-material/Download';
+import VisibilityIcon from '@mui/icons-material/Visibility';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import EmailIcon from '@mui/icons-material/Email';
 import { useTranslations } from 'next-intl';
@@ -194,6 +195,30 @@ export default function HeroSection() {
                 }}
               >
                 {t('ctaCV')}
+              </Button>
+
+              <Button
+                variant="outlined"
+                size="large"
+                startIcon={<VisibilityIcon />}
+                href="https://flowcv.com/resume/sijustq2u2"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                  px: 3.5,
+                  py: 1.4,
+                  fontSize: '0.95rem',
+                  borderColor: 'rgba(255,255,255,0.4)',
+                  color: 'white',
+                  borderWidth: 2,
+                  '&:hover': {
+                    borderColor: 'white',
+                    bgcolor: 'rgba(255,255,255,0.08)',
+                    borderWidth: 2,
+                  },
+                }}
+              >
+                {t('viewCV')}
               </Button>
             </Stack>
           </Box>
